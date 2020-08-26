@@ -18,7 +18,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: test
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: run mysql
       run: sudo /etc/init.d/mysql start
     - name: connect mysql
