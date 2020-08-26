@@ -21,3 +21,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: run mysql
       run: sudo /etc/init.d/mysql start
+    - name: connect mysql
+      run: mysql --defaults-extra-file=dbaccess.cnf
